@@ -1,0 +1,241 @@
+@import "compass/css3";
+@import "compass/typography";
+@import "takitapart/takitapart";
+
+
+@mixin glow-text($text-color, $link-color: $text-color) {
+    color: $text-color;
+    @include text-shadow(rgba($text-color, 0.25) 0 0 0.25em);
+    
+    a {
+        color: $link-color;
+    }
+}
+
+@mixin glow-box($box-color) {
+    background: $box-color;
+    @include background-image(radial-gradient(40% 40%, lighten($box-color, 6.25%), darken($box-color, 6.25%)));
+    @include box-shadow(
+        rgba(black, 0.1) 0 0 25px 20px inset,
+        rgba($box-color, 0.05) 0 0 10px 5px
+    );
+    @include border-radius(5px)
+}
+
+
+// Color Globals
+$color-dark-red: #aa3535;
+$color-red: #d13038;
+
+$color-orange: #f58723;
+$color-light-orange: #eebb66;
+
+$color-dark-blue: #224455;
+$color-blue: #44aaaa;
+
+$color-green: #668866;
+$color-light-green: #dddd88;
+
+$color-dark-grey: #473c46;
+$color-grey: #839192;
+$color-light-grey: #ced1cb;
+
+html {
+    @include box-shadow(
+        rgba(black, 0.1) 0 0 25px 20px inset
+    );
+}
+
+body {
+    @include box-sizing(border-box);
+    @include grid();
+
+    @include glow-text($color-light-orange, $color-orange);
+
+    @include background(
+        linear-gradient(left, rgba(black, 0.05), rgba(white, 0.05), rgba(black, 0.05)),
+        center bottom no-repeat url(../i/bg3.png),
+        url(../i/bg2.png)
+    );
+    @include background-size(
+        auto,
+        100% auto,
+        auto
+    );
+    
+    // background: $color-dark-blue center bottom no-repeat url(../i/bg.png);
+    // background-size: 100% auto;
+    // background: $color-dark-blue url(../i/bg2.png);
+
+    color: $color-light-orange;
+    font-family: "livory";
+
+}
+
+h1 {
+    font-family: "brandon-grotesque";
+    font-weight: bold;
+}
+h2 {
+    font-family: "livory";
+    font-style: italic;
+    font-weight: normal;
+}
+h3 {
+    @include glow-text($color-orange);
+
+    font-family: "brandon-grotesque";
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+p {
+}
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+
+    &:hover {
+       text-decoration: underline;
+    }
+}
+
+::-moz-selection { background: $color-orange; color: #fff; text-shadow: none; }
+::selection { background: $color-orange; color: #fff; text-shadow: none; }
+
+
+h1 {
+    @extend .huge;
+}
+
+#twoway.blue {
+    @include glow-text($color-light-grey, $color-blue);
+
+    h3 {
+        @include glow-text($color-blue);
+    }
+}
+
+footer {
+    @include column(12);
+}
+
+header { 
+
+    @include column(12);
+
+    &#top {
+        @include glow-text($color-light-green);
+    }
+
+    &.blue {
+        @include glow-box($color-blue);
+        @include glow-text($color-dark-blue);
+    }
+
+    &.green {
+        @include glow-box($color-green);
+        @include glow-text($color-light-green);
+    }
+
+    &.white-red {
+        @include glow-box($color-light-grey);
+        @include glow-text($color-red);
+    }
+
+}
+
+article {
+    section { 
+        @include column(12);
+
+        h3 {
+            @include after(0.5);
+        }
+
+        p {
+            @include first-line-small-caps;
+            @include drop-cap;
+            @include before(0.5);
+        } 
+    }
+}
+
+.product {
+    .feature {
+        @include column(12);
+        height: 10em;
+    }
+}
+
+.aside {
+    @include column(12);
+}
+
+
+
+/* @media screen and (min-width: 480px) */
+@media screen and (min-width: 30em) {
+
+    .product {
+        .feature {
+            @include column(6); 
+        }
+    }
+
+}
+
+
+/* @media screen and (min-width: 720px) */
+@media screen and (min-width: 45em) {
+
+    header {
+
+        &#top {
+            @include column(6);
+            @include push(6);
+        }
+
+        &.blue {
+            @include push(3);
+            @include column(6);
+        }
+
+    }
+
+    article {
+        section { @include column(6); }
+    }
+
+    .product {
+    @include row(9); 
+
+        .feature {
+                @include column(3,9);
+        }
+
+    }
+
+    .aside {
+        @include column(3);
+    }
+
+}
+
+/* @media screen and (min-width: 888px) */
+@media screen and (min-width: 55.5em) { }
+
+/* @media screen and (min-width: 984px) */
+@media screen and (min-width: 61.5em) { @include baseline-grid(18); }
+
+/* @media screen and (min-width: 1200px) */
+@media screen and (min-width: 75em) { @include baseline-grid(20); }
+
+/* @media screen and (min-width: 1392px) */
+@media screen and (min-width: 87em) { @include baseline-grid(22); }
+
+
+
+
+
