@@ -13,10 +13,11 @@
 *
 */
 
+@mixin field-width($field-id, $field-width: 100%) {
+	label[for="#{$field-id}"] { width: $field-width; }
+}
 
-
-
-@mixin field-size-grid($column-units: 1) {
+@mixin field-width-grid($column-units: 1) {
 	width: gridsystem-width($column-units, $total-columns);
 }
 
@@ -28,13 +29,13 @@ form {
             box-sizing: border-box;
 
 	fieldset {
-		@include clearfix();
+
 		border: 0;
 		margin: 0;
 		padding: 0;
 
 		legend {
-			@include clearfix();
+
 		}
 
 		input,textarea,select {
@@ -44,7 +45,7 @@ form {
 		            box-sizing: border-box;
 
 			border-width: 0;
-			@extend .field-full;
+			width: 100%;
 			margin: 0;
 			padding: 0 0.25em;
 		}
@@ -57,46 +58,6 @@ form {
 			padding: 0;
 		}
 
-	}
-
-
-	// Form sizes, based on grid units.
-	$baseline-grid-size: ($line / $em);
-
-	.field-miniscule {
-		width: #{$baseline-grid-size * 1}em;
-	}
-
-	.field-tiny {
-		width: #{$baseline-grid-size * 2}em;
-	}
-
-	.field-small {
-		width: #{$baseline-grid-size * 4}em;
-	}
-
-	.field-normal, .field-medium {
-		width: #{$baseline-grid-size * 8}em;
-	}
-
-	.field-large {
-		width: #{$baseline-grid-size * 16}em;
-	}
-
-	.field-huge {
-		width: #{$baseline-grid-size * 32}em;
-	}
-
-	.field-massive {
-		width: #{$baseline-grid-size * 64}em;
-	}
-
-	.field-gigantic {
-		width: #{$baseline-grid-size * 128}em;
-	}
-
-	.field-full {
-		width: 100%;
 	}
 
 

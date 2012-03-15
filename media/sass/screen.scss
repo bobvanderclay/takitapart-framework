@@ -67,6 +67,7 @@ body {
 }
 
 h1 {
+    @extend .huge;
     font-family: "brandon-grotesque";
     font-weight: bold;
 }
@@ -77,6 +78,7 @@ h2 {
 }
 h3 {
     @include glow-text($color-orange);
+    @include leading-after(0.5);
 
     font-family: "brandon-grotesque";
     font-weight: bold;
@@ -98,9 +100,6 @@ a {
 ::-moz-selection { background: $color-orange; color: #fff; text-shadow: none; }
 ::selection { background: $color-orange; color: #fff; text-shadow: none; }
 
-h1 {
-    @extend .huge;
-}
 
 #twoway.blue {
     @include glow-text($color-light-grey, $color-blue);
@@ -142,10 +141,6 @@ article {
     section { 
         @include column(12);
 
-        h3 {
-            @include leading-after(0.5);
-        }
-
         p {
             @include first-line-small-caps;
             @include drop-cap;
@@ -160,10 +155,7 @@ article#example-form {
     }
     form {
         @include column(12);
-
-        h3 {
-            @include leading-after(0.5);
-        }
+        background-color: rgba(black,0.05);
 
         fieldset {
             @include label-below();
@@ -180,7 +172,6 @@ article#example-form {
             font-family: "livory";
             font-style: italic;
 
-            // size
             width: 100%;
         }
 
@@ -191,9 +182,6 @@ article#example-form {
             background: rgba(lighten($color-blue, 0%), 0.675);
             font-family: "livory";
             font-weight: bold;
-
-            
-
         }
     }
 }
@@ -203,9 +191,6 @@ article#example-form {
         @include column(12);
         height: 10em;
 
-        h3 {
-            @include leading(0.5);
-        }
         p {
             @include leading-before(0.5);
         }
@@ -235,17 +220,14 @@ article#example-form {
                 @include inline-fields();
             }
 
-            label {
-                // size
-                &[for="first-name"] { width: 40%; }
-                &[for="middle-initial"] { width: 10%; }
-                &[for="last-name"] { width: 50%; }
+            @include field-width("first-name", 40%);
+            @include field-width("middle-initial", 10%);
+            @include field-width("last-name", 50%);
 
-                &[for="city"] { width: 60%; }
-                &[for="state"] { width: 10%; }
-                &[for="zip"] { width: 30%; }
+            @include field-width("city", 60%);
+            @include field-width("state", 10%);
+            @include field-width("zip", 30%);
 
-            }
         }
     }
 
