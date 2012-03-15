@@ -1,0 +1,152 @@
+/*
+*  A fluid, responsive-friendly form framework. 
+*
+*
+*  Part of the takitapart CSS framework [ http://takitapart.net/framework ].
+*
+*  See readme.md for details, licensing, and acknowledgments. 
+*
+*
+*  Notes on use
+*  ------------
+*  + Wrap field elements with label elements. 
+*
+*/
+
+
+
+
+@mixin field-size-grid($column-units: 1) {
+	width: gridsystem-width($column-units, $total-columns);
+}
+
+form {
+
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+            box-sizing: border-box;
+
+	fieldset {
+		@include clearfix();
+		border: 0;
+		margin: 0;
+		padding: 0;
+
+		legend {
+			@include clearfix();
+		}
+
+		input,textarea,select {
+			-webkit-box-sizing: border-box;
+		       -moz-box-sizing: border-box;
+		        -ms-box-sizing: border-box;
+		            box-sizing: border-box;
+
+			border-width: 0;
+			@extend .field-full;
+			margin: 0;
+			padding: 0 0.25em;
+		}
+		label {
+			-webkit-box-sizing: border-box;
+		       -moz-box-sizing: border-box;
+		        -ms-box-sizing: border-box;
+		            box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+
+	}
+
+
+	// Form sizes, based on grid units.
+	$baseline-grid-size: ($line / $em);
+
+	.field-miniscule {
+		width: #{$baseline-grid-size * 1}em;
+	}
+
+	.field-tiny {
+		width: #{$baseline-grid-size * 2}em;
+	}
+
+	.field-small {
+		width: #{$baseline-grid-size * 4}em;
+	}
+
+	.field-normal, .field-medium {
+		width: #{$baseline-grid-size * 8}em;
+	}
+
+	.field-large {
+		width: #{$baseline-grid-size * 16}em;
+	}
+
+	.field-huge {
+		width: #{$baseline-grid-size * 32}em;
+	}
+
+	.field-massive {
+		width: #{$baseline-grid-size * 64}em;
+	}
+
+	.field-gigantic {
+		width: #{$baseline-grid-size * 128}em;
+	}
+
+	.field-full {
+		width: 100%;
+	}
+
+
+}
+
+@mixin inline-fields() {
+	input,textarea,select {
+		
+	}
+
+	label {
+		@include clearfix();
+		float: left;
+		padding-right: .5em;
+	}
+
+	label:last-child {
+		padding-right: 0;
+	}
+}
+
+@mixin label-below() {
+	legend {
+	}
+
+	label {
+		display: block;
+	    padding-top: #{($line / $em)}em; // one baseline-grid unit
+	    margin: 0 0 -1.0em 0;
+
+	    &:last-child {
+	    	margin: 0;
+	    }
+	}
+
+	input,textarea,select {
+	    display: block;
+	    height: #{($line / $em)}em; // one baseline-grid unit
+	    position: relative;
+	    top: -3em;
+	}
+}
+
+@mixin label-left($label-width: 30%) {
+	label {
+		display: inline-block;
+		width: $label-width;
+	}
+
+	input,textarea,select {
+	    display: inline-block;
+	}
+}

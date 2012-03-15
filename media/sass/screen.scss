@@ -47,7 +47,6 @@ html {
 }
 
 body {
-    @include box-sizing(border-box);
     @include grid();
 
     @include glow-text($color-light-orange, $color-orange);
@@ -62,14 +61,9 @@ body {
         100% auto,
         auto
     );
-    
-    // background: $color-dark-blue center bottom no-repeat url(../i/bg.png);
-    // background-size: 100% auto;
-    // background: $color-dark-blue url(../i/bg2.png);
 
     color: $color-light-orange;
     font-family: "livory";
-
 }
 
 h1 {
@@ -104,7 +98,6 @@ a {
 ::-moz-selection { background: $color-orange; color: #fff; text-shadow: none; }
 ::selection { background: $color-orange; color: #fff; text-shadow: none; }
 
-
 h1 {
     @extend .huge;
 }
@@ -122,7 +115,6 @@ footer {
 }
 
 header { 
-
     @include column(12);
 
     &#top {
@@ -151,14 +143,58 @@ article {
         @include column(12);
 
         h3 {
-            @include after(0.5);
+            @include leading-after(0.5);
         }
 
         p {
             @include first-line-small-caps;
             @include drop-cap;
-            @include before(0.5);
+            @include leading-before(0.5);
         } 
+    }
+}
+
+article#example-form {
+    section {
+        @include column(12);
+    }
+    form {
+        @include column(12);
+
+        h3 {
+            @include leading-after(0.5);
+        }
+
+        fieldset {
+            @include label-below();
+        }
+
+        legend {
+            @include glow-text($color-light-orange);
+            font-family: "brandon-grotesque";
+            font-weight: bold;
+        }
+
+        label {
+            @include glow-text($color-light-grey);
+            font-family: "livory";
+            font-style: italic;
+
+            // size
+            width: 100%;
+        }
+
+        input, textarea, select {
+            @include glow-text($color-light-grey);
+            @include border-radius(5px);
+            
+            background: rgba(lighten($color-blue, 0%), 0.675);
+            font-family: "livory";
+            font-weight: bold;
+
+            
+
+        }
     }
 }
 
@@ -166,6 +202,13 @@ article {
     .feature {
         @include column(12);
         height: 10em;
+
+        h3 {
+            @include leading(0.5);
+        }
+        p {
+            @include leading-before(0.5);
+        }
     }
 }
 
@@ -181,6 +224,28 @@ article {
     .product {
         .feature {
             @include column(6); 
+        }
+    }
+
+    article#example-form {
+        form {
+
+            fieldset#form-name,
+            fieldset#form-address-city-state-zip {            
+                @include inline-fields();
+            }
+
+            label {
+                // size
+                &[for="first-name"] { width: 40%; }
+                &[for="middle-initial"] { width: 10%; }
+                &[for="last-name"] { width: 50%; }
+
+                &[for="city"] { width: 60%; }
+                &[for="state"] { width: 10%; }
+                &[for="zip"] { width: 30%; }
+
+            }
         }
     }
 
@@ -208,11 +273,20 @@ article {
         section { @include column(6); }
     }
 
+    article#example-form {
+        section {
+            @include column(6);
+        }
+        form {
+            @include column(6);
+        }
+    }
+
     .product {
     @include row(9); 
 
         .feature {
-                @include column(3,9);
+            @include column(3,9);
         }
 
     }

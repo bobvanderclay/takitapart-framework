@@ -509,14 +509,14 @@ table {
 *  See readme.md for details, licensing, and acknowledgments. 
 *
 */
-/* line 34, ../sass/takitapart/_takitapart-typography.scss */
+/* line 41, ../sass/takitapart/_takitapart-typography.scss */
 body {
   /* 16px / 24px */
   font-size: 1em;
   line-height: 1.5em;
 }
 
-/* line 44, ../sass/takitapart/_takitapart-typography.scss */
+/* line 51, ../sass/takitapart/_takitapart-typography.scss */
 .small {
   /* 13px / 18px */
   font-size: 0.813em;
@@ -524,7 +524,7 @@ body {
   margin: 1.5em 0;
 }
 
-/* line 52, ../sass/takitapart/_takitapart-typography.scss */
+/* line 59, ../sass/takitapart/_takitapart-typography.scss */
 .medium, .normal, h3, p {
   /* 16px / 24px */
   font-size: 1em;
@@ -533,7 +533,7 @@ body {
   margin: 1.5em 0;
 }
 
-/* line 60, ../sass/takitapart/_takitapart-typography.scss */
+/* line 67, ../sass/takitapart/_takitapart-typography.scss */
 .large, h2, h1 {
   /* 26 / 36px */
   font-size: 1.625em;
@@ -541,7 +541,7 @@ body {
   margin: 0.923em 0;
 }
 
-/* line 68, ../sass/takitapart/_takitapart-typography.scss */
+/* line 75, ../sass/takitapart/_takitapart-typography.scss */
 .huge, h1 {
   /* 42px / 48px */
   font-size: 2.625em;
@@ -549,7 +549,7 @@ body {
   margin: 0.571em 0;
 }
 
-/* line 76, ../sass/takitapart/_takitapart-typography.scss */
+/* line 83, ../sass/takitapart/_takitapart-typography.scss */
 .massive {
   /* 68px / 72px */
   font-size: 4.25em;
@@ -557,7 +557,7 @@ body {
   margin: 1.5em 0;
 }
 
-/* line 84, ../sass/takitapart/_takitapart-typography.scss */
+/* line 91, ../sass/takitapart/_takitapart-typography.scss */
 .gigantic {
   /* 110px / 120px */
   font-size: 6.875em;
@@ -590,6 +590,112 @@ body:before, body:after {
 /* line 41, ../sass/takitapart/_takitapart-grid.scss */
 body:after {
   clear: both;
+}
+
+/*
+*  A fluid, responsive-friendly form framework. 
+*
+*
+*  Part of the takitapart CSS framework [ http://takitapart.net/framework ].
+*
+*  See readme.md for details, licensing, and acknowledgments. 
+*
+*
+*  Notes on use
+*  ------------
+*  + Wrap field elements with label elements. 
+*
+*/
+/* line 23, ../sass/takitapart/_takitapart-form.scss */
+form {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 30, ../sass/takitapart/_takitapart-form.scss */
+form fieldset {
+  *zoom: 1;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+/* line 37, ../sass/takitapart/_takitapart-grid.scss */
+form fieldset:before, form fieldset:after {
+  content: "";
+  display: table;
+}
+/* line 41, ../sass/takitapart/_takitapart-grid.scss */
+form fieldset:after {
+  clear: both;
+}
+/* line 36, ../sass/takitapart/_takitapart-form.scss */
+form fieldset legend {
+  *zoom: 1;
+}
+/* line 37, ../sass/takitapart/_takitapart-grid.scss */
+form fieldset legend:before, form fieldset legend:after {
+  content: "";
+  display: table;
+}
+/* line 41, ../sass/takitapart/_takitapart-grid.scss */
+form fieldset legend:after {
+  clear: both;
+}
+/* line 40, ../sass/takitapart/_takitapart-form.scss */
+form fieldset input, form fieldset textarea, form fieldset select {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  border-width: 0;
+  margin: 0;
+  padding: 0 0.25em;
+}
+/* line 51, ../sass/takitapart/_takitapart-form.scss */
+form fieldset label {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* line 66, ../sass/takitapart/_takitapart-form.scss */
+form .field-miniscule {
+  width: 1.5em;
+}
+/* line 70, ../sass/takitapart/_takitapart-form.scss */
+form .field-tiny {
+  width: 3em;
+}
+/* line 74, ../sass/takitapart/_takitapart-form.scss */
+form .field-small {
+  width: 6em;
+}
+/* line 78, ../sass/takitapart/_takitapart-form.scss */
+form .field-normal, form .field-medium {
+  width: 12em;
+}
+/* line 82, ../sass/takitapart/_takitapart-form.scss */
+form .field-large {
+  width: 24em;
+}
+/* line 86, ../sass/takitapart/_takitapart-form.scss */
+form .field-huge {
+  width: 48em;
+}
+/* line 90, ../sass/takitapart/_takitapart-form.scss */
+form .field-massive {
+  width: 96em;
+}
+/* line 94, ../sass/takitapart/_takitapart-form.scss */
+form .field-gigantic {
+  width: 192em;
+}
+/* line 98, ../sass/takitapart/_takitapart-form.scss */
+form .field-full, form fieldset input, form fieldset textarea, form fieldset select {
+  width: 100%;
 }
 
 /*
@@ -684,10 +790,6 @@ html {
 
 /* line 49, ../sass/screen.scss */
 body {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
   display: block;
   width: 88.889%;
   margin: 0 5.556%;
@@ -725,20 +827,20 @@ body a {
   color: #f58723;
 }
 
-/* line 75, ../sass/screen.scss */
+/* line 69, ../sass/screen.scss */
 h1 {
   font-family: "brandon-grotesque";
   font-weight: bold;
 }
 
-/* line 79, ../sass/screen.scss */
+/* line 73, ../sass/screen.scss */
 h2 {
   font-family: "livory";
   font-style: italic;
   font-weight: normal;
 }
 
-/* line 84, ../sass/screen.scss */
+/* line 78, ../sass/screen.scss */
 h3 {
   color: #f58723;
   text-shadow: rgba(245, 135, 35, 0.25) 0 0 0.25em;
@@ -751,31 +853,31 @@ h3 a {
   color: #f58723;
 }
 
-/* line 95, ../sass/screen.scss */
+/* line 89, ../sass/screen.scss */
 a {
   font-weight: bold;
   text-decoration: none;
 }
-/* line 99, ../sass/screen.scss */
+/* line 93, ../sass/screen.scss */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 104, ../sass/screen.scss */
+/* line 98, ../sass/screen.scss */
 ::-moz-selection {
   background: #f58723;
   color: #fff;
   text-shadow: none;
 }
 
-/* line 105, ../sass/screen.scss */
+/* line 99, ../sass/screen.scss */
 ::selection {
   background: #f58723;
   color: #fff;
   text-shadow: none;
 }
 
-/* line 112, ../sass/screen.scss */
+/* line 105, ../sass/screen.scss */
 #twoway.blue {
   color: #ced1cb;
   text-shadow: rgba(206, 209, 203, 0.25) 0 0 0.25em;
@@ -784,7 +886,7 @@ a:hover {
 #twoway.blue a {
   color: #44aaaa;
 }
-/* line 115, ../sass/screen.scss */
+/* line 108, ../sass/screen.scss */
 #twoway.blue h3 {
   color: #44aaaa;
   text-shadow: rgba(68, 170, 170, 0.25) 0 0 0.25em;
@@ -794,7 +896,7 @@ a:hover {
   color: #44aaaa;
 }
 
-/* line 120, ../sass/screen.scss */
+/* line 113, ../sass/screen.scss */
 footer {
   display: block;
   float: left;
@@ -806,7 +908,7 @@ footer {
   box-sizing: border-box;
 }
 
-/* line 124, ../sass/screen.scss */
+/* line 117, ../sass/screen.scss */
 header {
   display: block;
   float: left;
@@ -817,7 +919,7 @@ header {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 128, ../sass/screen.scss */
+/* line 120, ../sass/screen.scss */
 header#top {
   color: #dddd88;
   text-shadow: rgba(221, 221, 136, 0.25) 0 0 0.25em;
@@ -826,7 +928,7 @@ header#top {
 header#top a {
   color: #dddd88;
 }
-/* line 132, ../sass/screen.scss */
+/* line 124, ../sass/screen.scss */
 header.blue {
   background: #44aaaa;
   background-image: -webkit-gradient(radial, 40% 40%, 0, 40% 40%, 100, color-stop(0%, #53baba), color-stop(100%, #3b9393));
@@ -852,7 +954,7 @@ header.blue {
 header.blue a {
   color: #224455;
 }
-/* line 137, ../sass/screen.scss */
+/* line 129, ../sass/screen.scss */
 header.green {
   background: #668866;
   background-image: -webkit-gradient(radial, 40% 40%, 0, 40% 40%, 100, color-stop(0%, #769876), color-stop(100%, #587658));
@@ -878,7 +980,7 @@ header.green {
 header.green a {
   color: #dddd88;
 }
-/* line 142, ../sass/screen.scss */
+/* line 134, ../sass/screen.scss */
 header.white-red {
   background: #ced1cb;
   background-image: -webkit-gradient(radial, 40% 40%, 0, 40% 40%, 100, color-stop(0%, #dee0dc), color-stop(100%, #bec2ba));
@@ -905,7 +1007,7 @@ header.white-red a {
   color: #d13038;
 }
 
-/* line 150, ../sass/screen.scss */
+/* line 142, ../sass/screen.scss */
 article section {
   display: block;
   float: left;
@@ -916,38 +1018,37 @@ article section {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 153, ../sass/screen.scss */
+/* line 145, ../sass/screen.scss */
 article section h3 {
   margin-bottom: 0.75em;
 }
-/* line 157, ../sass/screen.scss */
+/* line 149, ../sass/screen.scss */
 article section p {
   margin-top: 0.75em;
 }
-/* line 109, ../sass/takitapart/_takitapart-typography.scss */
+/* line 117, ../sass/takitapart/_takitapart-typography.scss */
 article section p:first-line {
   font-weight: 800;
   font-variant: small-caps;
 }
-/* line 114, ../sass/takitapart/_takitapart-typography.scss */
+/* line 122, ../sass/takitapart/_takitapart-typography.scss */
 article section p + p {
-  text-indent: 1.5em;
   margin-top: 0;
 }
-/* line 118, ../sass/takitapart/_takitapart-typography.scss */
+/* line 125, ../sass/takitapart/_takitapart-typography.scss */
 article section p + p:first-line {
   font-weight: 400;
   font-variant: normal;
 }
-/* line 127, ../sass/takitapart/_takitapart-typography.scss */
+/* line 134, ../sass/takitapart/_takitapart-typography.scss */
 article section p:first-letter {
   font-size: 3.5em;
-  line-height: 1em;
+  line-height: 1.0em;
   font-weight: 400;
   float: left;
   margin: 0 0.107em 0 0;
 }
-/* line 137, ../sass/takitapart/_takitapart-typography.scss */
+/* line 143, ../sass/takitapart/_takitapart-typography.scss */
 article section p + p:first-letter {
   font-size: 1em;
   line-height: 1.25em;
@@ -955,7 +1056,92 @@ article section p + p:first-letter {
   margin: 0;
 }
 
-/* line 166, ../sass/screen.scss */
+/* line 158, ../sass/screen.scss */
+article#example-form section {
+  display: block;
+  float: left;
+  width: 100%;
+  padding: 0 0.75em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 161, ../sass/screen.scss */
+article#example-form form {
+  display: block;
+  float: left;
+  width: 100%;
+  padding: 0 0.75em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 164, ../sass/screen.scss */
+article#example-form form h3 {
+  margin-bottom: 0.75em;
+}
+/* line 125, ../sass/takitapart/_takitapart-form.scss */
+article#example-form form fieldset label {
+  display: block;
+  padding-top: 1.5em;
+  margin: 0 0 -1em 0;
+}
+/* line 130, ../sass/takitapart/_takitapart-form.scss */
+article#example-form form fieldset label:last-child {
+  margin: 0;
+}
+/* line 135, ../sass/takitapart/_takitapart-form.scss */
+article#example-form form fieldset input, article#example-form form fieldset textarea, article#example-form form fieldset select {
+  display: block;
+  height: 1.5em;
+  position: relative;
+  top: -3em;
+}
+/* line 172, ../sass/screen.scss */
+article#example-form form legend {
+  color: #eebb66;
+  text-shadow: rgba(238, 187, 102, 0.25) 0 0 0.25em;
+  font-family: "brandon-grotesque";
+  font-weight: bold;
+}
+/* line 10, ../sass/screen.scss */
+article#example-form form legend a {
+  color: #eebb66;
+}
+/* line 178, ../sass/screen.scss */
+article#example-form form label {
+  color: #ced1cb;
+  text-shadow: rgba(206, 209, 203, 0.25) 0 0 0.25em;
+  font-family: "livory";
+  font-style: italic;
+  width: 100%;
+}
+/* line 10, ../sass/screen.scss */
+article#example-form form label a {
+  color: #ced1cb;
+}
+/* line 187, ../sass/screen.scss */
+article#example-form form input, article#example-form form textarea, article#example-form form select {
+  color: #ced1cb;
+  text-shadow: rgba(206, 209, 203, 0.25) 0 0 0.25em;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  background: rgba(68, 170, 170, 0.675);
+  font-family: "livory";
+  font-weight: bold;
+}
+/* line 10, ../sass/screen.scss */
+article#example-form form input a, article#example-form form textarea a, article#example-form form select a {
+  color: #ced1cb;
+}
+
+/* line 202, ../sass/screen.scss */
 .product .feature {
   display: block;
   float: left;
@@ -967,8 +1153,17 @@ article section p + p:first-letter {
   box-sizing: border-box;
   height: 10em;
 }
+/* line 206, ../sass/screen.scss */
+.product .feature h3 {
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+}
+/* line 209, ../sass/screen.scss */
+.product .feature p {
+  margin-top: 0.75em;
+}
 
-/* line 172, ../sass/screen.scss */
+/* line 215, ../sass/screen.scss */
 .aside {
   display: block;
   float: left;
@@ -982,7 +1177,7 @@ article section p + p:first-letter {
 
 /* @media screen and (min-width: 480px) */
 @media screen and (min-width: 30em) {
-  /* line 182, ../sass/screen.scss */
+  /* line 225, ../sass/screen.scss */
   .product .feature {
     display: block;
     float: left;
@@ -993,10 +1188,59 @@ article section p + p:first-letter {
     -ms-box-sizing: border-box;
     box-sizing: border-box;
   }
+
+  /* line 110, ../sass/takitapart/_takitapart-form.scss */
+  article#example-form form fieldset#form-name label,
+  article#example-form form fieldset#form-address-city-state-zip label {
+    *zoom: 1;
+    float: left;
+    padding-right: .5em;
+  }
+  /* line 37, ../sass/takitapart/_takitapart-grid.scss */
+  article#example-form form fieldset#form-name label:before, article#example-form form fieldset#form-name label:after,
+  article#example-form form fieldset#form-address-city-state-zip label:before,
+  article#example-form form fieldset#form-address-city-state-zip label:after {
+    content: "";
+    display: table;
+  }
+  /* line 41, ../sass/takitapart/_takitapart-grid.scss */
+  article#example-form form fieldset#form-name label:after,
+  article#example-form form fieldset#form-address-city-state-zip label:after {
+    clear: both;
+  }
+  /* line 116, ../sass/takitapart/_takitapart-form.scss */
+  article#example-form form fieldset#form-name label:last-child,
+  article#example-form form fieldset#form-address-city-state-zip label:last-child {
+    padding-right: 0;
+  }
+  /* line 240, ../sass/screen.scss */
+  article#example-form form label[for="first-name"] {
+    width: 40%;
+  }
+  /* line 241, ../sass/screen.scss */
+  article#example-form form label[for="middle-initial"] {
+    width: 10%;
+  }
+  /* line 242, ../sass/screen.scss */
+  article#example-form form label[for="last-name"] {
+    width: 50%;
+  }
+  /* line 244, ../sass/screen.scss */
+  article#example-form form label[for="city"] {
+    width: 60%;
+  }
+  /* line 245, ../sass/screen.scss */
+  article#example-form form label[for="state"] {
+    width: 10%;
+  }
+  /* line 246, ../sass/screen.scss */
+  article#example-form form label[for="zip"] {
+    width: 30%;
+  }
 }
 /* @media screen and (min-width: 720px) */
 @media screen and (min-width: 45em) {
-  /* line 195, ../sass/screen.scss */
+  /* line 260, ../sass/screen.scss */
   header#top {
     display: block;
     float: left;
@@ -1008,7 +1252,7 @@ article section p + p:first-letter {
     box-sizing: border-box;
     margin-left: 50%;
   }
-  /* line 200, ../sass/screen.scss */
+  /* line 265, ../sass/screen.scss */
   header.blue {
     margin-left: 25%;
     display: block;
@@ -1021,7 +1265,7 @@ article section p + p:first-letter {
     box-sizing: border-box;
   }
 
-  /* line 208, ../sass/screen.scss */
+  /* line 273, ../sass/screen.scss */
   article section {
     display: block;
     float: left;
@@ -1033,7 +1277,30 @@ article section p + p:first-letter {
     box-sizing: border-box;
   }
 
-  /* line 211, ../sass/screen.scss */
+  /* line 277, ../sass/screen.scss */
+  article#example-form section {
+    display: block;
+    float: left;
+    width: 50%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  /* line 280, ../sass/screen.scss */
+  article#example-form form {
+    display: block;
+    float: left;
+    width: 50%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  /* line 285, ../sass/screen.scss */
   .product {
     display: block;
     float: left;
@@ -1043,7 +1310,7 @@ article section p + p:first-letter {
     -ms-box-sizing: border-box;
     box-sizing: border-box;
   }
-  /* line 214, ../sass/screen.scss */
+  /* line 288, ../sass/screen.scss */
   .product .feature {
     display: block;
     float: left;
@@ -1055,7 +1322,7 @@ article section p + p:first-letter {
     box-sizing: border-box;
   }
 
-  /* line 220, ../sass/screen.scss */
+  /* line 294, ../sass/screen.scss */
   .aside {
     display: block;
     float: left;

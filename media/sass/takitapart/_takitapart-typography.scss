@@ -21,15 +21,22 @@
     margin: #{(($line) / $em) / ($font-size / $em)}em 0;
 }
 
-// Leading before in grid units.
-@mixin before($amount: 1) {
+// Leading before, in grid units.
+@mixin leading-before($amount: 1) {
     margin-top: #{($line / $em) * $amount}em;
 }
 
-// Leading after in grid units.
-@mixin after($amount: 1) {
+// Leading after, in grid units.
+@mixin leading-after($amount: 1) {
     margin-bottom: #{($line / $em) * $amount}em;
 }
+
+// Leading before & after, in grid units.
+@mixin leading($before-amount: 1, $after-amount: $before-amount) {
+    @include leading-before($before-amount);
+    @include leading-after($after-amount);
+}
+
 
 body {
     /* 16px / 24px */
@@ -106,46 +113,38 @@ body {
 }
 
 @mixin first-line-small-caps() {
+
     &:first-line {
         font-weight: 800;
         font-variant: small-caps;
     }
 
     & + p {
-        text-indent: #{$line / $em}em;
         margin-top: 0;
 
         &:first-line {
             font-weight: 400;
             font-variant: normal
         }
-
     }
 }
 
 @mixin drop-cap() {
+
     &:first-letter {
         font-size: 3.5em;
-        line-height: 1em;
+        line-height: 1.0em;
         font-weight: 400;
         float: left;
         margin: 0 0.107em 0 0;
     }   
 
     & + p {
-
         &:first-letter {
             font-size: 1em;
             line-height: 1.25em;
             float: none;
             margin: 0;
         }
-
     }
 }
-
-
-    
-
-
-

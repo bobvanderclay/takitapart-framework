@@ -1,10 +1,9 @@
 <!doctype html>
-<!--[if lt IE 9]><html class="ie"><![endif]-->
-<!--[if gte IE 9]><!--><html><!--<![endif]-->
-<!--
-    The comment jumble above is handy for targeting old IE with CSS.
-    http://paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
--->
+<!--[if lt IE 7 ]> <html class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class=""> <!--<![endif]-->
 
 <head>
     <title>The takitapart CSS Framework</title>
@@ -112,6 +111,68 @@
             </h2>
         </div>
     </header>
+
+    <article id="example-form">
+
+        <section>
+            <h3>We'd love to hear from you</h3>
+            <p>
+                Please complete this form to the best of your abilities. Do not hesititate to use incorrect information.
+            </p>
+            <p>
+                Your data will not be saved or stored. In fact, this form has no action defined, and will not submit anywhere.
+            </p>
+        </section>
+
+        <form>
+            
+            <h3>Example Contact Form</h3>
+
+            <fieldset id="form-name">
+
+                <legend>Name</legend>
+
+                <label for="first-name">First<input id="first-name" type="text"></label>
+
+                <label for="middle-initial">MI<input id="middle-initial" type="text"></label>
+
+                <label for="last-name">Last<input id="last-name" type="text"></label>
+
+            </fieldset>
+
+            <fieldset id="form-address">
+
+                <legend>Address</legend>
+
+                <label>Street<input type="text"></label>
+
+                <label>Apt. / Bldg.<input type="text"></label>
+
+                <fieldset id="form-address-city-state-zip">
+
+                    <label for="city">City<input type="text"></label>
+
+                    <label for="state">State<input type="text"></label>
+
+                    <label for="zip">Zip<input type="text"></label>
+
+                </fieldset>
+
+            </fieldset>
+
+            <fieldset id="">
+
+                <legend>Details</legend>
+
+                <label>Subject<input type="text"></label>
+
+                <label>Description<textarea></textarea></label>
+
+            </fieldset>
+
+        </form>
+
+    </article>
 
     <article id="twoway" class="blue">
         <section class="wrapper">
