@@ -72,6 +72,8 @@ h1 {
     font-weight: bold;
 }
 h2 {
+    @include leading(0.5);
+
     font-family: "livory";
     font-style: italic;
     font-weight: normal;
@@ -99,15 +101,6 @@ a {
 
 ::-moz-selection { background: $color-orange; color: #fff; text-shadow: none; }
 ::selection { background: $color-orange; color: #fff; text-shadow: none; }
-
-
-#twoway.blue {
-    @include glow-text($color-light-grey, $color-blue);
-
-    h3 {
-        @include glow-text($color-blue);
-    }
-}
 
 footer {
     @include column(12);
@@ -138,6 +131,15 @@ header {
 }
 
 article {
+
+    &.blue {
+        @include glow-text($color-light-grey, $color-blue);
+
+        h3 {
+            @include glow-text($color-blue);
+        }
+    }
+
     section { 
         @include column(12);
 
@@ -147,12 +149,15 @@ article {
             @include leading-before(0.5);
         } 
     }
+
 }
 
 article#example-form {
+
     section {
         @include column(12);
     }
+
     form {
         @include column(12);
         background-color: rgba(black,0.05);
@@ -184,9 +189,11 @@ article#example-form {
             font-weight: bold;
         }
     }
+
 }
 
 .product {
+    
     .feature {
         @include column(12);
         height: 10em;
@@ -195,6 +202,7 @@ article#example-form {
             @include leading-before(0.5);
         }
     }
+    
 }
 
 .aside {
