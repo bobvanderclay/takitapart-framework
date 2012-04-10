@@ -16,7 +16,7 @@ var switchColor = 'rgb(255,255,255)';
 var switchOpacity = '0.618';
 
 var columns = 12;
-var outerMargin = 5.5555555555555;
+var outerMargin = 5.5555555555556;
 
 var baseFontSize = 16;
 var baselineGridHeight = (24 / baseFontSize)+'em';

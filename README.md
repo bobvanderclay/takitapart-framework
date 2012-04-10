@@ -11,6 +11,9 @@ To include the framework, copy the directory to your SASS folder, and include it
 
 	@import "takitapart/takitapart";
 
+I've also included a slightly modified version of the Golden Gridlet, adding in configuration 
+variables for custom columns. 
+
 Roadmap
 -------
 + Clean up configuation variables
