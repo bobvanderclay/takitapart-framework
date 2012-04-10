@@ -13,4 +13,4 @@ http://necolas.github.com/normalize.css/
 and
 
 HTML5 Boilerplate
-h5bp.com
+http://h5bp.com
