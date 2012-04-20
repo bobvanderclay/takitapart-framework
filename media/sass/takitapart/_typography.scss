@@ -8,6 +8,7 @@
 *  See readme.md for details, licensing, and acknowledgments. 
 *
 */
+@import "config";
 
 @mixin baseline-grid($size: $font-size) {
     body {

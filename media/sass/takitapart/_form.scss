@@ -12,6 +12,7 @@
 *  + Wrap field elements with label elements. 
 *
 */
+@import "config";
 
 @mixin field-width($field-id, $field-width: 100%) {
 	label[for="#{$field-id}"] { width: $field-width; }

@@ -1,8 +1,32 @@
 @import "compass/css3";
 @import "compass/typography";
-@import "takitapart/takitapart";
+
+// Uncomment and adjust default configuration here.
+// Base font-size in pixels.
+// $font-size: 16;
+
+// Base line-height.
+// $line: $font-size * 1.5;
+// $em: $font-size * 1;
+
+// Number of columns.
+// $columns: 12;
+
+// Width of the outer margin, in percent.
+// $outer-margin: 5.55555%;
+
+// Half width of the gutter, in em. 
+// $half-gutter-width: #{($line/2)/$em}em;
+
+// Comment out unnecessary modules here.
+@import "takitapart/normalize";
+@import "takitapart/typography";
+@import "takitapart/grid";
+@import "takitapart/form";
+@import "takitapart/print";
 
 
+// Mixins to style takitapart framework sample page.
 @mixin glow-text($text-color, $link-color: $text-color) {
     color: $text-color;
     @include text-shadow(rgba($text-color, 0.25) 0 0 0.25em);
@@ -22,8 +46,7 @@
     @include border-radius(5px)
 }
 
-
-// Color Globals
+// taktiapart color palette. 
 $color-dark-red: #aa3535;
 $color-red: #d13038;
 
@@ -39,6 +62,7 @@ $color-light-green: #dddd88;
 $color-dark-grey: #473c46;
 $color-grey: #839192;
 $color-light-grey: #ced1cb;
+
 
 html {
     @include box-shadow(
@@ -273,7 +297,7 @@ article#example-form {
     }
 
     .product {
-    @include row(9); 
+    @include subgrid(9); 
 
         .feature {
             @include column(3,9);
@@ -289,6 +313,8 @@ article#example-form {
 
 /* @media screen and (min-width: 888px) */
 @media screen and (min-width: 55.5em) { }
+
+// Increase font size as screen width continues to grow.
 
 /* @media screen and (min-width: 984px) */
 @media screen and (min-width: 61.5em) { @include baseline-grid(18); }
