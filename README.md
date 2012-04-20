@@ -5,7 +5,8 @@ A SASS-based semantic, responsive, and fluid framework.
 Usage
 -----
 A sample webpage using most of the features is included (index.html).
-A [Compass](http://http://compass-style.org/) stylesheet is also used.
+The exmaple stylesheet makes use of the [Compass](http://http://compass-style.org/) Framework. While
+highly recommended, the takitapart framework does not require Compass.
 All the takitapart-framework SASS files are in the media/sass/takitapart directory.
 To include the framework, copy the directory to your SASS folder, and include it in your stylesheet.
 
