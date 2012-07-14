@@ -726,9 +726,8 @@ form fieldset label {
 }
 /* line 67, ../sass/screen.scss */
 html {
-  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 0 25px 20px inset;
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 0 25px 20px inset;
-  -o-box-shadow: rgba(0, 0, 0, 0.1) 0 0 25px 20px inset;
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 0 25px 20px inset;
   box-shadow: rgba(0, 0, 0, 0.1) 0 0 25px 20px inset;
 }
 
@@ -744,14 +743,13 @@ body {
   box-sizing: border-box;
   color: #eebb66;
   text-shadow: rgba(238, 187, 102, 0.25) 0 0 0.25em;
-  background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 0, 0, 0.05)), color-stop(50%, rgba(255, 255, 255, 0.05)), color-stop(100%, rgba(0, 0, 0, 0.05))), center bottom no-repeat url(../i/bg3.png), url(../i/bg2.png);
-  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.05), rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.05)), center bottom no-repeat url(../i/bg3.png), url(../i/bg2.png);
-  background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.05), rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.05)), center bottom no-repeat url(../i/bg3.png), url(../i/bg2.png);
-  background: -o-linear-gradient(left, rgba(0, 0, 0, 0.05), rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.05)), center bottom no-repeat url(../i/bg3.png), url(../i/bg2.png);
-  background: -ms-linear-gradient(left, rgba(0, 0, 0, 0.05), rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.05)), center bottom no-repeat url(../i/bg3.png), url(../i/bg2.png);
-  background: linear-gradient(left, rgba(0, 0, 0, 0.05), rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.05)), center bottom no-repeat url(../i/bg3.png), url(../i/bg2.png);
-  -moz-background-size: auto, 100% auto, auto;
+  background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 0, 0, 0.05)), color-stop(50%, rgba(255, 255, 255, 0.05)), color-stop(100%, rgba(0, 0, 0, 0.05))), url(../i/bg2.png);
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.05), rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.05)), url(../i/bg2.png);
+  background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.05), rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.05)), url(../i/bg2.png);
+  background: -o-linear-gradient(left, rgba(0, 0, 0, 0.05), rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.05)), url(../i/bg2.png);
+  background: linear-gradient(left, rgba(0, 0, 0, 0.05), rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.05)), url(../i/bg2.png);
   -webkit-background-size: auto, 100% auto, auto;
+  -moz-background-size: auto, 100% auto, auto;
   -o-background-size: auto, 100% auto, auto;
   background-size: auto, 100% auto, auto;
   color: #eebb66;
@@ -771,13 +769,13 @@ body a {
   color: #f58723;
 }
 
-/* line 93, ../sass/screen.scss */
+/* line 92, ../sass/screen.scss */
 h1 {
   font-family: "brandon-grotesque";
   font-weight: bold;
 }
 
-/* line 98, ../sass/screen.scss */
+/* line 97, ../sass/screen.scss */
 h2 {
   margin-top: 0.75em;
   margin-bottom: 0.75em;
@@ -786,7 +784,7 @@ h2 {
   font-weight: normal;
 }
 
-/* line 105, ../sass/screen.scss */
+/* line 104, ../sass/screen.scss */
 h3 {
   color: #f58723;
   text-shadow: rgba(245, 135, 35, 0.25) 0 0 0.25em;
@@ -800,31 +798,31 @@ h3 a {
   color: #f58723;
 }
 
-/* line 117, ../sass/screen.scss */
+/* line 116, ../sass/screen.scss */
 a {
   font-weight: bold;
   text-decoration: none;
 }
-/* line 121, ../sass/screen.scss */
+/* line 120, ../sass/screen.scss */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 126, ../sass/screen.scss */
+/* line 125, ../sass/screen.scss */
 ::-moz-selection {
   background: #f58723;
   color: #fff;
   text-shadow: none;
 }
 
-/* line 127, ../sass/screen.scss */
+/* line 126, ../sass/screen.scss */
 ::selection {
   background: #f58723;
   color: #fff;
   text-shadow: none;
 }
 
-/* line 129, ../sass/screen.scss */
+/* line 128, ../sass/screen.scss */
 footer {
   display: block;
   float: left;
@@ -836,7 +834,7 @@ footer {
   box-sizing: border-box;
 }
 
-/* line 133, ../sass/screen.scss */
+/* line 132, ../sass/screen.scss */
 header {
   display: block;
   float: left;
@@ -847,7 +845,7 @@ header {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 136, ../sass/screen.scss */
+/* line 135, ../sass/screen.scss */
 header#top {
   color: #dddd88;
   text-shadow: rgba(221, 221, 136, 0.25) 0 0 0.25em;
@@ -856,24 +854,21 @@ header#top {
 header#top a {
   color: #dddd88;
 }
-/* line 140, ../sass/screen.scss */
+/* line 139, ../sass/screen.scss */
 header.blue {
   background: #44aaaa;
   background-image: -webkit-gradient(radial, 40% 40%, 0, 40% 40%, 100, color-stop(0%, #53baba), color-stop(100%, #3b9393));
   background-image: -webkit-radial-gradient(40% 40%, #53baba, #3b9393);
   background-image: -moz-radial-gradient(40% 40%, #53baba, #3b9393);
   background-image: -o-radial-gradient(40% 40%, #53baba, #3b9393);
-  background-image: -ms-radial-gradient(40% 40%, #53baba, #3b9393);
   background-image: radial-gradient(40% 40%, #53baba, #3b9393);
-  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 0 25px 20px inset, rgba(68, 170, 170, 0.05) 0 0 10px 5px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 0 25px 20px inset, rgba(68, 170, 170, 0.05) 0 0 10px 5px;
-  -o-box-shadow: rgba(0, 0, 0, 0.1) 0 0 25px 20px inset, rgba(68, 170, 170, 0.05) 0 0 10px 5px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 0 25px 20px inset, rgba(68, 170, 170, 0.05) 0 0 10px 5px;
   box-shadow: rgba(0, 0, 0, 0.1) 0 0 25px 20px inset, rgba(68, 170, 170, 0.05) 0 0 10px 5px;
-  -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
-  -o-border-radius: 5px;
+  -moz-border-radius: 5px;
   -ms-border-radius: 5px;
-  -khtml-border-radius: 5px;
+  -o-border-radius: 5px;
   border-radius: 5px;
   color: #224455;
   text-shadow: rgba(34, 68, 85, 0.25) 0 0 0.25em;
@@ -882,24 +877,21 @@ header.blue {
 header.blue a {
   color: #224455;
 }
-/* line 145, ../sass/screen.scss */
+/* line 144, ../sass/screen.scss */
 header.green {
   background: #668866;
   background-image: -webkit-gradient(radial, 40% 40%, 0, 40% 40%, 100, color-stop(0%, #769876), color-stop(100%, #587658));
   background-image: -webkit-radial-gradient(40% 40%, #769876, #587658);
   background-image: -moz-radial-gradient(40% 40%, #769876, #587658);
   background-image: -o-radial-gradient(40% 40%, #769876, #587658);
-  background-image: -ms-radial-gradient(40% 40%, #769876, #587658);
   background-image: radial-gradient(40% 40%, #769876, #587658);
-  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 0 25px 20px inset, rgba(102, 136, 102, 0.05) 0 0 10px 5px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 0 25px 20px inset, rgba(102, 136, 102, 0.05) 0 0 10px 5px;
-  -o-box-shadow: rgba(0, 0, 0, 0.1) 0 0 25px 20px inset, rgba(102, 136, 102, 0.05) 0 0 10px 5px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 0 25px 20px inset, rgba(102, 136, 102, 0.05) 0 0 10px 5px;
   box-shadow: rgba(0, 0, 0, 0.1) 0 0 25px 20px inset, rgba(102, 136, 102, 0.05) 0 0 10px 5px;
-  -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
-  -o-border-radius: 5px;
+  -moz-border-radius: 5px;
   -ms-border-radius: 5px;
-  -khtml-border-radius: 5px;
+  -o-border-radius: 5px;
   border-radius: 5px;
   color: #dddd88;
   text-shadow: rgba(221, 221, 136, 0.25) 0 0 0.25em;
@@ -908,24 +900,21 @@ header.green {
 header.green a {
   color: #dddd88;
 }
-/* line 150, ../sass/screen.scss */
+/* line 149, ../sass/screen.scss */
 header.white-red {
   background: #ced1cb;
   background-image: -webkit-gradient(radial, 40% 40%, 0, 40% 40%, 100, color-stop(0%, #dee0dc), color-stop(100%, #bec2ba));
   background-image: -webkit-radial-gradient(40% 40%, #dee0dc, #bec2ba);
   background-image: -moz-radial-gradient(40% 40%, #dee0dc, #bec2ba);
   background-image: -o-radial-gradient(40% 40%, #dee0dc, #bec2ba);
-  background-image: -ms-radial-gradient(40% 40%, #dee0dc, #bec2ba);
   background-image: radial-gradient(40% 40%, #dee0dc, #bec2ba);
-  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 0 25px 20px inset, rgba(206, 209, 203, 0.05) 0 0 10px 5px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 0 25px 20px inset, rgba(206, 209, 203, 0.05) 0 0 10px 5px;
-  -o-box-shadow: rgba(0, 0, 0, 0.1) 0 0 25px 20px inset, rgba(206, 209, 203, 0.05) 0 0 10px 5px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 0 25px 20px inset, rgba(206, 209, 203, 0.05) 0 0 10px 5px;
   box-shadow: rgba(0, 0, 0, 0.1) 0 0 25px 20px inset, rgba(206, 209, 203, 0.05) 0 0 10px 5px;
-  -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
-  -o-border-radius: 5px;
+  -moz-border-radius: 5px;
   -ms-border-radius: 5px;
-  -khtml-border-radius: 5px;
+  -o-border-radius: 5px;
   border-radius: 5px;
   color: #d13038;
   text-shadow: rgba(209, 48, 56, 0.25) 0 0 0.25em;
@@ -935,7 +924,7 @@ header.white-red a {
   color: #d13038;
 }
 
-/* line 159, ../sass/screen.scss */
+/* line 158, ../sass/screen.scss */
 article.blue {
   color: #ced1cb;
   text-shadow: rgba(206, 209, 203, 0.25) 0 0 0.25em;
@@ -944,7 +933,7 @@ article.blue {
 article.blue a {
   color: #44aaaa;
 }
-/* line 162, ../sass/screen.scss */
+/* line 161, ../sass/screen.scss */
 article.blue h3 {
   color: #44aaaa;
   text-shadow: rgba(68, 170, 170, 0.25) 0 0 0.25em;
@@ -953,7 +942,7 @@ article.blue h3 {
 article.blue h3 a {
   color: #44aaaa;
 }
-/* line 167, ../sass/screen.scss */
+/* line 166, ../sass/screen.scss */
 article section {
   display: block;
   float: left;
@@ -964,7 +953,7 @@ article section {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 170, ../sass/screen.scss */
+/* line 169, ../sass/screen.scss */
 article section p {
   margin-top: 0.75em;
 }
@@ -998,7 +987,7 @@ article section p + p:first-letter {
   margin: 0;
 }
 
-/* line 181, ../sass/screen.scss */
+/* line 180, ../sass/screen.scss */
 article#example-form section {
   display: block;
   float: left;
@@ -1009,7 +998,7 @@ article#example-form section {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 185, ../sass/screen.scss */
+/* line 184, ../sass/screen.scss */
 article#example-form form {
   display: block;
   float: left;
@@ -1038,7 +1027,7 @@ article#example-form form fieldset input, article#example-form form fieldset tex
   position: relative;
   top: -3em;
 }
-/* line 193, ../sass/screen.scss */
+/* line 192, ../sass/screen.scss */
 article#example-form form legend {
   color: #eebb66;
   text-shadow: rgba(238, 187, 102, 0.25) 0 0 0.25em;
@@ -1049,7 +1038,7 @@ article#example-form form legend {
 article#example-form form legend a {
   color: #eebb66;
 }
-/* line 199, ../sass/screen.scss */
+/* line 198, ../sass/screen.scss */
 article#example-form form label {
   color: #ced1cb;
   text-shadow: rgba(206, 209, 203, 0.25) 0 0 0.25em;
@@ -1061,15 +1050,14 @@ article#example-form form label {
 article#example-form form label a {
   color: #ced1cb;
 }
-/* line 207, ../sass/screen.scss */
+/* line 206, ../sass/screen.scss */
 article#example-form form input, article#example-form form textarea, article#example-form form select {
   color: #ced1cb;
   text-shadow: rgba(206, 209, 203, 0.25) 0 0 0.25em;
-  -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
-  -o-border-radius: 5px;
+  -moz-border-radius: 5px;
   -ms-border-radius: 5px;
-  -khtml-border-radius: 5px;
+  -o-border-radius: 5px;
   border-radius: 5px;
   background: rgba(68, 170, 170, 0.675);
   font-family: "livory";
@@ -1080,7 +1068,7 @@ article#example-form form input a, article#example-form form textarea a, article
   color: #ced1cb;
 }
 
-/* line 221, ../sass/screen.scss */
+/* line 220, ../sass/screen.scss */
 .product .feature {
   display: block;
   float: left;
@@ -1092,12 +1080,12 @@ article#example-form form input a, article#example-form form textarea a, article
   box-sizing: border-box;
   height: 10em;
 }
-/* line 225, ../sass/screen.scss */
+/* line 224, ../sass/screen.scss */
 .product .feature p {
   margin-top: 0.75em;
 }
 
-/* line 232, ../sass/screen.scss */
+/* line 231, ../sass/screen.scss */
 .aside {
   display: block;
   float: left;
@@ -1111,7 +1099,7 @@ article#example-form form input a, article#example-form form textarea a, article
 
 /* @media screen and (min-width: 480px) */
 @media screen and (min-width: 30em) {
-  /* line 242, ../sass/screen.scss */
+  /* line 241, ../sass/screen.scss */
   .product .feature {
     display: block;
     float: left;
@@ -1174,7 +1162,7 @@ article#example-form form input a, article#example-form form textarea a, article
 }
 /* @media screen and (min-width: 720px) */
 @media screen and (min-width: 45em) {
-  /* line 274, ../sass/screen.scss */
+  /* line 273, ../sass/screen.scss */
   header#top {
     display: block;
     float: left;
@@ -1186,7 +1174,7 @@ article#example-form form input a, article#example-form form textarea a, article
     box-sizing: border-box;
     margin-left: 50%;
   }
-  /* line 279, ../sass/screen.scss */
+  /* line 278, ../sass/screen.scss */
   header.blue {
     margin-left: 25%;
     display: block;
@@ -1199,7 +1187,7 @@ article#example-form form input a, article#example-form form textarea a, article
     box-sizing: border-box;
   }
 
-  /* line 287, ../sass/screen.scss */
+  /* line 286, ../sass/screen.scss */
   article section {
     display: block;
     float: left;
@@ -1211,7 +1199,7 @@ article#example-form form input a, article#example-form form textarea a, article
     box-sizing: border-box;
   }
 
-  /* line 291, ../sass/screen.scss */
+  /* line 290, ../sass/screen.scss */
   article#example-form section {
     display: block;
     float: left;
@@ -1222,7 +1210,7 @@ article#example-form form input a, article#example-form form textarea a, article
     -ms-box-sizing: border-box;
     box-sizing: border-box;
   }
-  /* line 294, ../sass/screen.scss */
+  /* line 293, ../sass/screen.scss */
   article#example-form form {
     display: block;
     float: left;
@@ -1234,7 +1222,7 @@ article#example-form form input a, article#example-form form textarea a, article
     box-sizing: border-box;
   }
 
-  /* line 299, ../sass/screen.scss */
+  /* line 298, ../sass/screen.scss */
   .product {
     display: block;
     float: left;
@@ -1245,7 +1233,7 @@ article#example-form form input a, article#example-form form textarea a, article
     -ms-box-sizing: border-box;
     box-sizing: border-box;
   }
-  /* line 302, ../sass/screen.scss */
+  /* line 301, ../sass/screen.scss */
   .product .feature {
     display: block;
     float: left;
@@ -1257,7 +1245,7 @@ article#example-form form input a, article#example-form form textarea a, article
     box-sizing: border-box;
   }
 
-  /* line 308, ../sass/screen.scss */
+  /* line 307, ../sass/screen.scss */
   .aside {
     display: block;
     float: left;

@@ -77,7 +77,6 @@ body {
 
     @include background(
         linear-gradient(left, rgba(black, 0.05), rgba(white, 0.05), rgba(black, 0.05)),
-        center bottom no-repeat url(../i/bg3.png),
         url(../i/bg2.png)
     );
     @include background-size(
