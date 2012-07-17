@@ -4,7 +4,7 @@ Gem::Specification.new do |s|
   s.date = "2012-07-17"
 
   # Gem Details
-  s.name = "css-lightbox"
+  s.name = "takitapart_framework"
   s.authors = ["Bob VanderClay"]
   s.summary = %q{A semantic, fluid, responsive framework for compass}
   s.description = %q{A semantic, fluid, responsive framework for compass}
