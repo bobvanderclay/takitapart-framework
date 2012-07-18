@@ -1,16 +1,28 @@
 The takitapart framework
 ========================
-A SASS-based semantic, responsive, and fluid framework.
+A [Compass](http://compass-style.org) extension providing a semantic, responsive, and fluid framework.
 
 Usage
 -----
-A sample webpage using most of the features is included (index.html).
-The exmaple stylesheet makes use of the [Compass](http://http://compass-style.org/) Framework. While
-highly recommended, the takitapart framework does not require Compass.
-All the takitapart-framework SASS files are in the media/sass/takitapart directory.
-To include the framework, copy the directory to your SASS folder, and include it in your stylesheet.
+A sample webpage using most of the features is included in this repository (index.html).
 
-	@import "takitapart/takitapart";
+This website is hosted here: http://takitapart.github.com/takitapart_framework/.
+
+To install this extension, from the command line run:
+
+	gem install takitapart_framework
+
+In your compass config.rb, include the framework:
+
+    require "takitapart_framework"
+
+In your stylesheet, include the individual modules as desired.
+
+    @import "takitapart_framework/normalize";
+    @import "takitapart_framework/typography";
+    @import "takitapart_framework/grid";
+    @import "takitapart_framework/form";
+    @import "takitapart_framework/print";
 
 I've also included a slightly modified version of the Golden Gridlet, adding in configuration 
 variables for custom columns. 
