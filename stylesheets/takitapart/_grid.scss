@@ -1,0 +1,106 @@
+/*
+*  A semantic, fluid, responsive grid system.
+*
+*  Part of the takitapart CSS framework [ http://takitapart.net/framework ].
+*
+*  See readme.md for details, licensing, and acknowledgments. 
+*
+*/
+@import "config";
+
+$total-width: 100%;
+$total-columns: $columns;
+
+@function gridsystem-width($columns:$columns, $total-columns:$total-columns) {
+    @return ($total-width / $total-columns) * $columns;
+}
+
+// The micro clearfix http://nicolasgallagher.com/micro-clearfix-hack/
+@mixin clearfix() {
+    *zoom:1;
+
+    &:before,
+    &:after {
+        content:"";
+        display:table;
+    }
+    &:after {
+        clear:both;
+    }
+}
+
+//////////
+// GRID //
+//////////
+
+// 
+@mixin grid() {
+    display: block;
+    width: $total-width - ($outer-margin * 2);
+    margin: 0 $outer-margin;
+
+    @include clearfix();
+
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+// Subgrid is a container for nested columns
+@mixin subgrid($columns:$columns,$of-columns:$total-columns) {
+    display: block;
+    float: left;
+    width: gridsystem-width($columns,$of-columns);
+
+    // No gutters, this acts as a container. 
+    padding: 0;
+
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+@mixin column($columns:$columns,$of-columns:$total-columns) {
+    display: block;
+    float: left;
+    width: gridsystem-width($columns,$of-columns);
+
+    // Elastic gutters.
+    padding: 0 $half-gutter-width;
+
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+@mixin push($columns: 1, $of-columns: $total-columns) {
+    margin-left: gridsystem-width($columns,$of-columns);
+
+}
+
+@mixin pull($columns: 1, $of-columns: $total-columns) {
+    margin-right: gridsystem-width($columns,$of-columns);
+}
+
+@mixin block($width-in-cols: 1, $height-in-cols: $width-in-cols, $padding: 0) {
+
+    display: inline-block;
+    position: relative;
+    
+    @include column($width-in-cols);
+    padding-bottom: gridsystem-width($height-in-cols);
+
+    & > * {
+        position: absolute;
+        overflow: hidden;
+
+        top: $padding;
+        bottom: $padding;
+        left: $padding;
+        right: $padding;
+    }
+
+}

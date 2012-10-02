@@ -1,0 +1,30 @@
+/*
+*  Base configuration stylesheet for the takitapart CSS framework.
+*  This module will be included by the other modules.
+*  These variables can be overridden in your site's stylesheets.
+*
+*  Part of the takitapart CSS framework [ http://takitapart.net/framework ].
+*
+*  See readme.md for details, licensing, and acknowledgments. 
+*
+*/
+
+// Do not change these values here.
+// Override these variables in your stylesheet above the @import directives.
+
+// Base font-size in pixels.
+$font-size: 16 !default;
+
+// Base line-height.
+$line: $font-size * 1.5 !default;
+$em: $font-size * 1 !default;
+
+// Number of columns.
+$columns: 12 !default;
+
+// Width of the outer margin, in percent.
+$outer-margin: 5.55555% !default;
+
+// Half width of the gutter, in em. 
+$half-gutter-width: #{($line/2)/$em}em !default;
+

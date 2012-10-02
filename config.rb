@@ -1,5 +1,5 @@
 # Require any additional compass plugins here.
-require "takitapart_framework"
+require "takitapart"
 
 # Set this to the root of your project when deployed:
 http_path = "/"

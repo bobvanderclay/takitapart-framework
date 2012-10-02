@@ -1,0 +1,151 @@
+/*
+*  Zoomable baseline grid, with mixins intended for responsive zooming.
+*  Along with some sensible typographic defaults. 
+*
+*
+*  Part of the takitapart CSS framework [ http://takitapart.net/framework ].
+*
+*  See readme.md for details, licensing, and acknowledgments. 
+*
+*/
+@import "config";
+
+@mixin baseline-grid($size: $font-size) {
+    body {
+        font-size: #{($size / $em)}em;
+    }
+}
+
+@mixin font-size($size-delta: 16px, $line-height: 24px) {
+    font-size: #{$font-size / $em}em;
+    line-height: #{$line / $em}em; /* 24 */
+    margin: #{(($line) / $em) / ($font-size / $em)}em 0;
+}
+
+// Leading before, in grid units.
+@mixin leading-before($amount: 1) {
+    margin-top: #{($line / $em) * $amount}em;
+}
+
+// Leading after, in grid units.
+@mixin leading-after($amount: 1) {
+    margin-bottom: #{($line / $em) * $amount}em;
+}
+
+// Leading before & after, in grid units.
+@mixin leading($before-amount: 1, $after-amount: $before-amount) {
+    @include leading-before($before-amount);
+    @include leading-after($after-amount);
+}
+
+
+body {
+    /* 16px / 24px */
+    font-size: $font-size / 16 * 1em;
+    line-height: #{$line / $em}em;
+}
+
+.miniscule {}
+
+.tiny {}
+
+.small {
+    /* 13px / 18px */
+    font-size: #{($font-size*0.8125) / $em}em;
+    line-height: ($line*0.75) / ($font-size*0.8125) * 1em;
+
+    margin: #{(($line) / $em) / ($font-size / $em)}em 0;
+}
+
+.medium, .normal, h3, p {
+    /* 16px / 24px */
+    font-size: #{$font-size / $em}em;
+    line-height: #{$line / $em}em; /* 24 */
+
+    margin: #{(($line) / $em) / ($font-size / $em)}em 0;
+}
+
+.large, h2, h1 {
+    /* 26 / 36px */
+    font-size: #{26 / $em}em;
+    line-height: ($line*1.5) / 26 * 1em;
+
+    margin: #{(($line) / $em) / (26 / $em)}em 0
+}
+
+.huge {
+    /* 42px / 48px */
+    font-size: #{42 / $em}em;
+    line-height: ($line*2) / 42 * 1em;
+
+    margin: #{(($line) / $em) / (42 / $em)}em 0;
+}
+
+.massive {
+    /* 68px / 72px */
+    font-size: #{68 / $em}em;
+    line-height: ($line*3) / 68 * 1em;
+
+    margin: #{(($line) / $em) / ($font-size / $em)}em 0;
+}
+
+.gigantic {
+    /* 110px / 120px */
+    font-size: #{110 / $em}em;
+    line-height: ($line*5) / 110 * 1em;
+
+    margin: #{(($line) / $em) / ($font-size / $em)}em 0;
+}
+
+
+@mixin indented() {
+
+    margin-bottom: 0; 
+
+    &:last-child {
+        margin-bottom: #{(($line) / $em) / ($font-size / $em)}em;
+    }  
+
+    & + p {
+        text-indent: #{$line / $em}em;
+        margin-top: 0;
+    }
+
+}
+
+@mixin first-line-small-caps() {
+
+    &:first-line {
+        font-weight: 800;
+        font-variant: small-caps;
+    }
+
+    & + p {
+        margin-top: 0;
+
+        &:first-line {
+            font-weight: 400;
+            font-variant: normal
+        }
+    }
+}
+
+@mixin drop-cap() {
+
+    &:first-letter {
+        font-size: 3.5em;
+        line-height: 1.0em;
+        font-weight: 400;
+        float: left;
+        margin: 0 0.107em 0 0;
+    }   
+
+    & + p {
+        &:first-letter {
+            font-size: 1em;
+            line-height: 1.25em;
+            float: none;
+            margin: 0;
+        }
+    }
+}
