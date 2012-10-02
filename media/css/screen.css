@@ -520,8 +520,8 @@ body {
 /* line 52, ../../../../../../.rvm/gems/ruby-1.9.3-p194/gems/takitapart_framework-0.0.1/stylesheets/takitapart_framework/_typography.scss */
 .small {
   /* 13px / 18px */
-  font-size: 0.813em;
-  line-height: 1.385em;
+  font-size: 0.8125em;
+  line-height: 1.38462em;
   margin: 1.5em 0;
 }
 
@@ -538,23 +538,23 @@ body {
 .large, h2, h1 {
   /* 26 / 36px */
   font-size: 1.625em;
-  line-height: 1.385em;
-  margin: 0.923em 0;
+  line-height: 1.38462em;
+  margin: 0.92308em 0;
 }
 
 /* line 76, ../../../../../../.rvm/gems/ruby-1.9.3-p194/gems/takitapart_framework-0.0.1/stylesheets/takitapart_framework/_typography.scss */
 .huge, h1 {
   /* 42px / 48px */
   font-size: 2.625em;
-  line-height: 1.143em;
-  margin: 0.571em 0;
+  line-height: 1.14286em;
+  margin: 0.57143em 0;
 }
 
 /* line 84, ../../../../../../.rvm/gems/ruby-1.9.3-p194/gems/takitapart_framework-0.0.1/stylesheets/takitapart_framework/_typography.scss */
 .massive {
   /* 68px / 72px */
   font-size: 4.25em;
-  line-height: 1.059em;
+  line-height: 1.05882em;
   margin: 1.5em 0;
 }
 
@@ -562,7 +562,7 @@ body {
 .gigantic {
   /* 110px / 120px */
   font-size: 6.875em;
-  line-height: 1.091em;
+  line-height: 1.09091em;
   margin: 1.5em 0;
 }
 
@@ -734,8 +734,8 @@ html {
 /* line 73, ../sass/screen.scss */
 body {
   display: block;
-  width: 88.889%;
-  margin: 0 5.556%;
+  width: 88.8889%;
+  margin: 0 5.55555%;
   *zoom: 1;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -747,6 +747,7 @@ body {
   background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.05), rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.05)), url(../i/bg2.png);
   background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.05), rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.05)), url(../i/bg2.png);
   background: -o-linear-gradient(left, rgba(0, 0, 0, 0.05), rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.05)), url(../i/bg2.png);
+  background: -ms-linear-gradient(left, rgba(0, 0, 0, 0.05), rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.05)), url(../i/bg2.png);
   background: linear-gradient(left, rgba(0, 0, 0, 0.05), rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.05)), url(../i/bg2.png);
   color: #eebb66;
   font-family: "livory";
@@ -857,6 +858,7 @@ header.blue {
   background-image: -webkit-radial-gradient(40% 40%, #53baba, #3b9393);
   background-image: -moz-radial-gradient(40% 40%, #53baba, #3b9393);
   background-image: -o-radial-gradient(40% 40%, #53baba, #3b9393);
+  background-image: -ms-radial-gradient(40% 40%, #53baba, #3b9393);
   background-image: radial-gradient(40% 40%, #53baba, #3b9393);
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 0 25px 20px inset, rgba(68, 170, 170, 0.05) 0 0 10px 5px;
   -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 0 25px 20px inset, rgba(68, 170, 170, 0.05) 0 0 10px 5px;
@@ -880,6 +882,7 @@ header.green {
   background-image: -webkit-radial-gradient(40% 40%, #769876, #587658);
   background-image: -moz-radial-gradient(40% 40%, #769876, #587658);
   background-image: -o-radial-gradient(40% 40%, #769876, #587658);
+  background-image: -ms-radial-gradient(40% 40%, #769876, #587658);
   background-image: radial-gradient(40% 40%, #769876, #587658);
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 0 25px 20px inset, rgba(102, 136, 102, 0.05) 0 0 10px 5px;
   -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 0 25px 20px inset, rgba(102, 136, 102, 0.05) 0 0 10px 5px;
@@ -903,6 +906,7 @@ header.white-red {
   background-image: -webkit-radial-gradient(40% 40%, #dee0dc, #bec2ba);
   background-image: -moz-radial-gradient(40% 40%, #dee0dc, #bec2ba);
   background-image: -o-radial-gradient(40% 40%, #dee0dc, #bec2ba);
+  background-image: -ms-radial-gradient(40% 40%, #dee0dc, #bec2ba);
   background-image: radial-gradient(40% 40%, #dee0dc, #bec2ba);
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 0 25px 20px inset, rgba(206, 209, 203, 0.05) 0 0 10px 5px;
   -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 0 25px 20px inset, rgba(206, 209, 203, 0.05) 0 0 10px 5px;
@@ -1233,7 +1237,7 @@ article#example-form form input a, article#example-form form textarea a, article
   .product .feature {
     display: block;
     float: left;
-    width: 33.333%;
+    width: 33.33333%;
     padding: 0 0.75em;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
