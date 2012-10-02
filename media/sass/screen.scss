@@ -214,7 +214,6 @@ article#example-form {
     
     .feature {
         @include column(12);
-        height: 10em;
 
         p {
             @include leading-before(0.5);
@@ -234,7 +233,7 @@ article#example-form {
 
     .product {
         .feature {
-            @include column(6); 
+            @include block(6, 3, 1);
         }
     }
 
@@ -295,6 +294,7 @@ article#example-form {
 
         .feature {
             @include column(3,9);
+            @include block(4,4,1);
         }
 
     }
@@ -311,13 +311,19 @@ article#example-form {
 // Increase font size as screen width continues to grow.
 
 /* @media screen and (min-width: 984px) */
-@media screen and (min-width: 61.5em) { @include baseline-grid(18); }
+@media screen and (min-width: 61.5em) { 
+    @include baseline-grid(18);
+}
 
 /* @media screen and (min-width: 1200px) */
-@media screen and (min-width: 75em) { @include baseline-grid(20); }
+@media screen and (min-width: 75em) { 
+    @include baseline-grid(20); 
+}
 
 /* @media screen and (min-width: 1392px) */
-@media screen and (min-width: 87em) { @include baseline-grid(22); }
+@media screen and (min-width: 87em) { 
+    @include baseline-grid(22); 
+}
 
 
 

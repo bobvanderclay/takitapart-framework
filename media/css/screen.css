@@ -1078,14 +1078,13 @@ article#example-form form input a, article#example-form form textarea a, article
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
-  height: 10em;
 }
-/* line 219, ../sass/screen.scss */
+/* line 218, ../sass/screen.scss */
 .product .feature p {
   margin-top: 0.75em;
 }
 
-/* line 226, ../sass/screen.scss */
+/* line 225, ../sass/screen.scss */
 .aside {
   display: block;
   float: left;
@@ -1099,8 +1098,10 @@ article#example-form form input a, article#example-form form textarea a, article
 
 /* @media screen and (min-width: 480px) */
 @media screen and (min-width: 30em) {
-  /* line 236, ../sass/screen.scss */
+  /* line 235, ../sass/screen.scss */
   .product .feature {
+    display: inline-block;
+    position: relative;
     display: block;
     float: left;
     width: 50%;
@@ -1109,6 +1110,16 @@ article#example-form form input a, article#example-form form textarea a, article
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
+    padding-bottom: 25%;
+  }
+  /* line 96, ../../../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_grid.scss */
+  .product .feature > * {
+    position: absolute;
+    overflow: hidden;
+    top: 1;
+    bottom: 1;
+    left: 1;
+    right: 1;
   }
 
   /* line 72, ../../../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_form.scss */
@@ -1162,7 +1173,7 @@ article#example-form form input a, article#example-form form textarea a, article
 }
 /* @media screen and (min-width: 720px) */
 @media screen and (min-width: 45em) {
-  /* line 268, ../sass/screen.scss */
+  /* line 267, ../sass/screen.scss */
   header#top {
     display: block;
     float: left;
@@ -1174,7 +1185,7 @@ article#example-form form input a, article#example-form form textarea a, article
     box-sizing: border-box;
     margin-left: 50%;
   }
-  /* line 273, ../sass/screen.scss */
+  /* line 272, ../sass/screen.scss */
   header.blue {
     margin-left: 25%;
     display: block;
@@ -1187,7 +1198,7 @@ article#example-form form input a, article#example-form form textarea a, article
     box-sizing: border-box;
   }
 
-  /* line 281, ../sass/screen.scss */
+  /* line 280, ../sass/screen.scss */
   article section {
     display: block;
     float: left;
@@ -1199,7 +1210,7 @@ article#example-form form input a, article#example-form form textarea a, article
     box-sizing: border-box;
   }
 
-  /* line 285, ../sass/screen.scss */
+  /* line 284, ../sass/screen.scss */
   article#example-form section {
     display: block;
     float: left;
@@ -1210,7 +1221,7 @@ article#example-form form input a, article#example-form form textarea a, article
     -ms-box-sizing: border-box;
     box-sizing: border-box;
   }
-  /* line 288, ../sass/screen.scss */
+  /* line 287, ../sass/screen.scss */
   article#example-form form {
     display: block;
     float: left;
@@ -1222,7 +1233,7 @@ article#example-form form input a, article#example-form form textarea a, article
     box-sizing: border-box;
   }
 
-  /* line 293, ../sass/screen.scss */
+  /* line 292, ../sass/screen.scss */
   .product {
     display: block;
     float: left;
@@ -1233,7 +1244,7 @@ article#example-form form input a, article#example-form form textarea a, article
     -ms-box-sizing: border-box;
     box-sizing: border-box;
   }
-  /* line 296, ../sass/screen.scss */
+  /* line 295, ../sass/screen.scss */
   .product .feature {
     display: block;
     float: left;
@@ -1243,6 +1254,26 @@ article#example-form form input a, article#example-form form textarea a, article
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+    display: block;
+    float: left;
+    width: 33.33333%;
+    padding: 0 0.75em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-bottom: 33.33333%;
+  }
+  /* line 96, ../../../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass.takitapart.framework-0.0.2/stylesheets/takitapart/_grid.scss */
+  .product .feature > * {
+    position: absolute;
+    overflow: hidden;
+    top: 1;
+    bottom: 1;
+    left: 1;
+    right: 1;
   }
 
   /* line 302, ../sass/screen.scss */

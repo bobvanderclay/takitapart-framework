@@ -6,23 +6,38 @@ Usage
 -----
 A sample webpage using most of the features is included in this repository (index.html).
 
-This website is hosted here: http://takitapart.github.com/takitapart_framework/.
+This website is hosted here: http://takitapart.github.com/takitapart-framework/.
 
 To install this extension, from the command line run:
 
-	gem install takitapart_framework
+	gem install compass.takitapart.framework
 
 In your compass config.rb, include the framework:
 
-    require "takitapart_framework"
+    require "takitapart"
 
 In your stylesheet, include the individual modules as desired.
 
-    @import "takitapart_framework/normalize";
-    @import "takitapart_framework/typography";
-    @import "takitapart_framework/grid";
-    @import "takitapart_framework/form";
-    @import "takitapart_framework/print";
+    @import "takitapart/normalize";
+    @import "takitapart/typography";
+    @import "takitapart/grid";
+    @import "takitapart/form";
+    @import "takitapart/print";
+
+You may also define SASS variables to configure the framework.
+
+    // Base font-size in pixels.
+    $font-size: 16;
+
+    // Base line-height.
+    $line: $font-size * 1.5;
+    $em: $font-size * 1;
+
+    // Number of columns.
+    $columns: 12;
+
+    // Width of the outer margin, in percent.
+    $outer-margin: 5.55555%;
 
 I've also included a slightly modified version of the Golden Gridlet, adding in configuration 
 variables for custom columns. 
