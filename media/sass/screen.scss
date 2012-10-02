@@ -19,11 +19,11 @@
 // $half-gutter-width: #{($line/2)/$em}em;
 
 // Comment out unnecessary modules here.
-@import "takitapart_framework/normalize";
-@import "takitapart_framework/typography";
-@import "takitapart_framework/grid";
-@import "takitapart_framework/form";
-@import "takitapart_framework/print";
+@import "takitapart/normalize";
+@import "takitapart/typography";
+@import "takitapart/grid";
+@import "takitapart/form";
+@import "takitapart/print";
 
 
 // Mixins to style takitapart framework sample page.
