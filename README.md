@@ -6,7 +6,7 @@ Usage
 -----
 A sample webpage using most of the features is included in this repository (index.html).
 
-This website is hosted here: http://takitapart.github.com/takitapart-framework/.
+This website is hosted here: http://takitapart.net/framework/.
 
 To install this extension, from the command line run:
 
